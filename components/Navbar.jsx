@@ -3,7 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 
 const Navbar = () => {
     // Variables
@@ -126,9 +127,19 @@ const Navbar = () => {
 
                             {/*Icons*/}
                             <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
+                                {/*LinkedIn*/}
+                                <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300">
+                                    <FaLinkedinIn />
+                                </div>
+
                                 {/*GitHub*/}
-                                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                                <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300">
                                     <FaGithub />
+                                </div>
+
+                                {/*Email*/}
+                                <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-300">
+                                    <AiOutlineMail />
                                 </div>
                             </div>
                         </div>
