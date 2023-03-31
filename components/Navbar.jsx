@@ -1,12 +1,27 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
     // Variables
     const direccionDeLogo = "/../public/assets/googleLogo.png";
+
+    /**
+     * State variables for sidebar.
+     * This is for do appear and disapper the sidebar.
+     */
+    const [sidebar, setSidebar] = useState(false);
+
+    /**
+     * Handle sidebar.
+     * For modify the value for state variable for the sidebar.
+     */
+    const handleSidebar = () => {
+        setSidebar(!sidebar);
+    };
 
     // Return
     return (
@@ -40,14 +55,26 @@ const Navbar = () => {
                  * md is responsive. Véase: https://tailwindcss.com/docs/responsive-design
                  * It meants that instead of md we can use sm, lg, xl, etc.
                  */}
-                <div className="md:hidden">
+                <div onClick={handleSidebar} className="md:hidden">
                     <AiOutlineMenu size={25} />
                 </div>
             </div>
 
             {/*Sidebar*/}
-            <div className="fixed left-0 top-0 w-full h-screen bg-black/70">
-                <div className="fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500">
+            <div
+                className={
+                    sidebar
+                        ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70"
+                        : ""
+                }
+            >
+                <div
+                    className={
+                        sidebar
+                            ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+                            : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+                    }
+                >
                     {/*Head of the sidebar*/}
                     <div>
                         <div className="flex w-full items-center justify-between">
@@ -60,7 +87,10 @@ const Navbar = () => {
                             />
 
                             {/*Icon*/}
-                            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
+                            <div
+                                onClick={handleSidebar}
+                                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+                            >
                                 <AiOutlineClose />
                             </div>
                         </div>
