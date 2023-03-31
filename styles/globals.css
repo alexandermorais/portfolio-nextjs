@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /*
-Estilos globales
+Global styles
 */
 
 @layer base {
@@ -28,7 +28,7 @@ Estilos globales
         @apply text-3xl sm:text-4xl;
     }
 
-    /*El cursor es una mano*/
+    /*The cursor is a pointer (hand)*/
     li {
         @apply cursor-pointer;
     }

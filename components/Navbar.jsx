@@ -7,12 +7,12 @@ const Navbar = () => {
     // Variables
     const direccionDeLogo = "/../public/assets/googleLogo.png";
 
-    // Retornar
+    // Return
     return (
         <div className="fixed w-full h-20 shadow-xl z-[100]">
-            {/*Barra de navegación*/}
+            {/*Navbar*/}
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-                {/*Imagen*/}
+                {/*Image*/}
                 <Image src={direccionDeLogo} alt="/" width="70" height="50" />
 
                 {/*Links*/}
@@ -31,10 +31,10 @@ const Navbar = () => {
                     </ul>
                 </div>
 
-                {/** Ícono de menú.
-                 * Se oculta el ícono, pero se muestra cuando desaparecen los li.
-                 * El md es cosa del responsive. Véase: https://tailwindcss.com/docs/responsive-design
-                 * Quiere decir que en vez de md puede ser sm, lg, xl, etcétera.
+                {/** Icon
+                 * The icon is hidded, but it appears when the li disappears.
+                 * md is responsive. Véase: https://tailwindcss.com/docs/responsive-design
+                 * It meants that instead of md we can use sm, lg, xl, etc.
                  */}
                 <div className="md:hidden">
                     <AiOutlineMenu size={25} />
@@ -42,14 +42,13 @@ const Navbar = () => {
             </div>
 
             {/**
-             * Barra lateral.
-             * Contendrá los li.
+             * Sidebar
              */}
             <div className="fixed left-0 top-0 w-full h-screen bg-black/70">
                 <div className="fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500">
                     <div>
                         <div className="flex w-full items-center justify-between">
-                            {/*Imagen*/}
+                            {/*Image*/}
                             <Image
                                 src={direccionDeLogo}
                                 alt="/"
@@ -57,7 +56,7 @@ const Navbar = () => {
                                 height="50"
                             />
 
-                            {/*Ícono*/}
+                            {/*Icon*/}
                             <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
                                 <AiOutlineClose />
                             </div>
