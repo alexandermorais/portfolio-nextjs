@@ -8,7 +8,7 @@ Global styles
 
 @layer base {
     body {
-        @apply bg-[#EAEDED] text-[#1f2937] tracking-wide;
+        @apply bg-[#EBF5FB] text-[#1f2937] tracking-wide;
     }
 
     h1,
