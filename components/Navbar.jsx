@@ -35,17 +35,24 @@ const Navbar = () => {
                 {/*Links*/}
                 <div>
                     <ul className="hidden md:flex">
-                        {/*Inicio*/}
+                        {/*Home*/}
                         <Link href="/">
                             <li className="ml-10 text-sm uppercase hover:border-b">
                                 Inicio
                             </li>
                         </Link>
 
-                        {/*Proyectos*/}
+                        {/*Projects*/}
                         <Link href="/">
                             <li className="ml-10 text-sm uppercase hover:border-b">
                                 Proyectos
+                            </li>
+                        </Link>
+
+                        {/*About*/}
+                        <Link href="/">
+                            <li className="ml-10 text-sm uppercase hover:border-b">
+                                Acerca
                             </li>
                         </Link>
                     </ul>
@@ -107,14 +114,19 @@ const Navbar = () => {
                     {/*Links of the sidebar*/}
                     <div className="py-4 flex flex-col">
                         <ul className="uppercase">
-                            {/*Inicio*/}
+                            {/*Home*/}
                             <Link href="/">
                                 <li className="py-4 text-sm">Inicio</li>
                             </Link>
 
-                            {/*Proyectos*/}
+                            {/*Projects*/}
                             <Link href="/">
                                 <li className="py-4 text-sm">Proyectos</li>
+                            </Link>
+
+                            {/*About*/}
+                            <Link href="/">
+                                <li className="py-4 text-sm">Acerca</li>
                             </Link>
                         </ul>
 
