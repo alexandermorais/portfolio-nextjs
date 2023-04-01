@@ -42,17 +42,24 @@ const Navbar = () => {
                             </li>
                         </Link>
 
-                        {/*Projects*/}
-                        <Link href="/">
-                            <li className="ml-10 text-sm uppercase hover:border-b">
-                                Proyectos
-                            </li>
-                        </Link>
-
                         {/*About*/}
                         <Link href="/">
                             <li className="ml-10 text-sm uppercase hover:border-b">
                                 Acerca
+                            </li>
+                        </Link>
+
+                        {/*Skills*/}
+                        <Link href="/">
+                            <li className="ml-10 text-sm uppercase hover:border-b">
+                                Habilidades
+                            </li>
+                        </Link>
+
+                        {/*Projects*/}
+                        <Link href="/">
+                            <li className="ml-10 text-sm uppercase hover:border-b">
+                                Proyectos
                             </li>
                         </Link>
                     </ul>
@@ -119,14 +126,19 @@ const Navbar = () => {
                                 <li className="py-4 text-sm">Inicio</li>
                             </Link>
 
-                            {/*Projects*/}
-                            <Link href="/">
-                                <li className="py-4 text-sm">Proyectos</li>
-                            </Link>
-
                             {/*About*/}
                             <Link href="/">
                                 <li className="py-4 text-sm">Acerca</li>
+                            </Link>
+
+                            {/*Skills*/}
+                            <Link href="/">
+                                <li className="py-4 text-sm">Habilidades</li>
+                            </Link>
+
+                            {/*Projects*/}
+                            <Link href="/">
+                                <li className="py-4 text-sm">Proyectos</li>
                             </Link>
                         </ul>
 

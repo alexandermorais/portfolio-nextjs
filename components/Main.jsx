@@ -16,11 +16,11 @@ const Main = () => {
                     {/*Second text*/}
                     <h1 className="py-4 text-gray-700">
                         ¡Hola, soy{" "}
-                        <span className="text-[#5651e5]">Alexander</span>!
+                        <span className="text-[#5651e5]">John Doe</span>!
                     </h1>
 
                     {/*Third text*/}
-                    <h1 className="py-2 text-gray-700">Un Desarrollador Web</h1>
+                    <h1 className="py-2 text-gray-700">Software Engineer</h1>
 
                     {/*Fourth text*/}
                     <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto">
