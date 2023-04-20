@@ -98,7 +98,14 @@ const Navbar = () => {
                     <div>
                         <div className="flex w-full items-center justify-between">
                             {/*Image*/}
-                            <Image src={logo} alt="/" width="70" height="50" />
+                            <Link href="/">
+                                <Image
+                                    src={logo}
+                                    alt="/"
+                                    width="70"
+                                    height="50"
+                                />
+                            </Link>
 
                             {/*Icon*/}
                             <div
@@ -121,23 +128,43 @@ const Navbar = () => {
                     <div className="py-4 flex flex-col">
                         <ul className="uppercase">
                             {/*Home*/}
-                            <Link href="/">
-                                <li className="py-4 text-sm">Inicio</li>
+                            <Link href="/#main" scroll={false}>
+                                <li
+                                    onClick={() => setSidebar(false)}
+                                    className="py-4 text-sm"
+                                >
+                                    Inicio
+                                </li>
                             </Link>
 
                             {/*About*/}
-                            <Link href="/">
-                                <li className="py-4 text-sm">Acerca</li>
+                            <Link href="/#about" scroll={false}>
+                                <li
+                                    onClick={() => setSidebar(false)}
+                                    className="py-4 text-sm"
+                                >
+                                    Acerca
+                                </li>
                             </Link>
 
                             {/*Skills*/}
-                            <Link href="/">
-                                <li className="py-4 text-sm">Habilidades</li>
+                            <Link href="/#skills" scroll={false}>
+                                <li
+                                    onClick={() => setSidebar(false)}
+                                    className="py-4 text-sm"
+                                >
+                                    Habilidades
+                                </li>
                             </Link>
 
                             {/*Projects*/}
-                            <Link href="/">
-                                <li className="py-4 text-sm">Proyectos</li>
+                            <Link href="/#projects" scroll={false}>
+                                <li
+                                    onClick={() => setSidebar(false)}
+                                    className="py-4 text-sm"
+                                >
+                                    Proyectos
+                                </li>
                             </Link>
                         </ul>
 
