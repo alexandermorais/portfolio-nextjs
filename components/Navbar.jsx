@@ -5,10 +5,9 @@ import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
+import logo from "./../public/assets/gitHubLogo.png";
 
 const Navbar = () => {
-    // Variables
-    const logoPath = "/../public/assets/gitHubLogo.png";
 
     /**
      * State variables for sidebar.
@@ -30,7 +29,7 @@ const Navbar = () => {
             {/*Navbar*/}
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 {/*Image*/}
-                <Image src={logoPath} alt="/" width="60" height="50" />
+                <Image src={logo} alt="/" width="60" height="50" />
 
                 {/*Links*/}
                 <div>
@@ -95,7 +94,7 @@ const Navbar = () => {
                         <div className="flex w-full items-center justify-between">
                             {/*Image*/}
                             <Image
-                                src={logoPath}
+                                src={logo}
                                 alt="/"
                                 width="70"
                                 height="50"
