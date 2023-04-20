@@ -6,6 +6,10 @@
 Global styles
 */
 
+html {
+    scroll-behavior: smooth;
+}
+
 @layer base {
     body {
         @apply bg-[#EBF5FB] text-[#1f2937] tracking-wide;

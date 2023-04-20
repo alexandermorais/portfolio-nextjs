@@ -8,7 +8,6 @@ import { AiOutlineMail } from "react-icons/ai";
 import logo from "./../public/assets/gitHubLogo.png";
 
 const Navbar = () => {
-
     /**
      * State variables for sidebar.
      * This is for do appear and disapper the sidebar.
@@ -29,34 +28,40 @@ const Navbar = () => {
             {/*Navbar*/}
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 {/*Image*/}
-                <Image src={logo} alt="/" width="60" height="50" />
+                <Link href="/#main" scroll={false}>
+                    <Image src={logo} alt="/" width="60" height="50" />
+                </Link>
 
                 {/*Links*/}
                 <div>
                     <ul className="hidden md:flex">
+                        {/**
+                         * We use scroll={false} for each Link to make scroll-behavior: smooth work in globals.css.
+                         */}
+
                         {/*Home*/}
-                        <Link href="/">
+                        <Link href="/#main" scroll={false}>
                             <li className="ml-10 text-sm uppercase hover:border-b">
                                 Inicio
                             </li>
                         </Link>
 
                         {/*About*/}
-                        <Link href="/">
+                        <Link href="/#about" scroll={false}>
                             <li className="ml-10 text-sm uppercase hover:border-b">
                                 Acerca
                             </li>
                         </Link>
 
                         {/*Skills*/}
-                        <Link href="/">
+                        <Link href="/#skills" scroll={false}>
                             <li className="ml-10 text-sm uppercase hover:border-b">
                                 Habilidades
                             </li>
                         </Link>
 
                         {/*Projects*/}
-                        <Link href="/">
+                        <Link href="/#projects" scroll={false}>
                             <li className="ml-10 text-sm uppercase hover:border-b">
                                 Proyectos
                             </li>
@@ -93,12 +98,7 @@ const Navbar = () => {
                     <div>
                         <div className="flex w-full items-center justify-between">
                             {/*Image*/}
-                            <Image
-                                src={logo}
-                                alt="/"
-                                width="70"
-                                height="50"
-                            />
+                            <Image src={logo} alt="/" width="70" height="50" />
 
                             {/*Icon*/}
                             <div
